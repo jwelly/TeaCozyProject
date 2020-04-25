@@ -1,0 +1,207 @@
+html,
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    opacity: 0.9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 10px;
+}
+
+
+
+/* Header (nav bar) */
+
+header {
+    background-color: black;
+    display: flex;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    padding-left: 10px;
+}
+
+
+ul {
+    display: flex;
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+ul li {
+    display: inline-block;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+a {
+    color: seashell;
+    text-decoration: none;
+}
+
+/* Main section */
+
+.main {
+    padding-top: 69px;
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Mission section */
+
+#mission {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+
+.content {
+    background-color: black;
+    width: 100%;
+    margin: auto;
+}
+
+/* Tea shop section */
+
+#store {
+    margin: 2em auto;
+}
+
+.item {
+    padding: 20px 15px;
+}
+
+.item img {
+    width: 300px;
+    height: 200px;
+}
+
+.item p {
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Locations */
+
+#locations {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 500px;
+    padding-top: 46px;
+    width: 100%;
+}
+
+
+.location {
+    background-color: black;
+    box-sizing: border-box;
+    height: 280px;
+    flex: 1 0 210px;
+    max-width: 300px;
+    padding: 10px;
+    margin: 6px 20px;
+    opacity: .85;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.location p {
+    margin: 20px auto;
+}
+
+/* Contact */
+
+#contact {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+#contact h2 {
+    padding-top: 0px;
+}
+
+/* Footer */
+
+footer {
+    display: block;
+    padding: 20px;
+    text-align: start;
+}
+
+
+@media only screen and (max-width: 770px) {
+    #locations {
+        height: 760px;
+    }
+    
+    .locations {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location p {
+        font-size: 0.85rem;
+        margin: 5px auto;
+    }
+
+    .location {
+        flex-basis: 180px;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    li {
+        padding: 20px 10px;
+        font-size: 0.818181rem;
+    }
+}
+
+
+@media only screen and (max-width: 560px) {
+    li {
+        padding: 20px 10px;
+        font-size: 0.7rem;
+    }
+
+    #mission .content,
+    footer {
+        font-size: 0.8rem;
+    }
+
+}
